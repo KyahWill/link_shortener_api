@@ -8,27 +8,18 @@ Basic Specifications
     output: Redirection to previous URL
 
 Optional Features
-1.  allow user to choose the hash-code.
+1. Allow user to choose the 'alias' for the hash-code.
 2. 
 
 Folder Structure:
-Basic -> Fulfilling bare minimum requirements. Minimal testing.
+Basic -> Flask App fulfilling "technically" the Basic Specifications
 
-Optional1 -> Basic + Optional Feature 1
+Optional_1 -> Basic + Optional Feature 1
 
+Optional_2 -> Optional 1 + Database linkage (Still undecided) +Docker File to be uploaded to a server
 
-Optional2 -> Optional 1 +
+Rewrite_1 -> Features of Optional_1 but in vanilla python. 
 
+Rewrite_2 -> Features of Optional_2 but in vanilla python
 
-REQUEST: Actual link -> RESPONSE: return hash or full shortened link
-
-REQUEST: Shortened/hidden link -> RESPONSE: should redirect IF HAS MATCHING LINK otherwise return not found response
-In the request body, the user may also provide an “alias”, using the alias, they can be redirected to the actual link (optional)
-
-Tech
-Language: Python - vanilla, flask, django
-Database: Feel free to use any, can use in-memory (lists/dicts)
-
-Deployment/Demo
-Local OR 
-AWS lambda/GCP cloud functions (optional)
+Rust -> Features of Basic but written in Rust<probably ActixWeb>
