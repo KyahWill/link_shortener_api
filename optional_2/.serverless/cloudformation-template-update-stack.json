@@ -162,7 +162,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/linkshortener/dev/1678338916470-2023-03-09T05:15:16.470Z/linkshortener.zip"
+          "S3Key": "serverless/linkshortener/dev/1678342355445-2023-03-09T06:12:35.445Z/linkshortener.zip"
         },
         "Handler": "wsgi_handler.handler",
         "Runtime": "python3.9",
@@ -180,14 +180,14 @@
         "AppLogGroup"
       ]
     },
-    "AppLambdaVersioni8iof614c5ctf1koyh1D89m28facdkn416yqbqZNq4": {
+    "AppLambdaVersionSXlvjCGUbFiHDaPoBpiHIV76PcNGiQhb5SU7XdsIMK4": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "AppLambdaFunction"
         },
-        "CodeSha256": "3Cbd47G82+kMjbUugDvkF1eX0f0Pj7glo/WmuC2HFho="
+        "CodeSha256": "cAnSFneYlsfV0qh4oLNpYYazKgKqst05Kzypfbjm3D0="
       }
     },
     "ApiGatewayRestApi": {
@@ -312,7 +312,7 @@
         "AppLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1678338911234": {
+    "ApiGatewayDeployment1678342349406": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -375,7 +375,7 @@
     "AppLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "AppLambdaVersioni8iof614c5ctf1koyh1D89m28facdkn416yqbqZNq4"
+        "Ref": "AppLambdaVersionSXlvjCGUbFiHDaPoBpiHIV76PcNGiQhb5SU7XdsIMK4"
       },
       "Export": {
         "Name": "sls-linkshortener-dev-AppLambdaFunctionQualifiedArn"

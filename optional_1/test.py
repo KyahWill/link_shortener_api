@@ -5,7 +5,7 @@ apiEndpoint = "http://localhost:5000/"
 code = 'alias'
 def get_link(url):
     response = requests.post(apiEndpoint,
-        json={'url': url, 'code':code},
+                             json={ 'code':code},
         headers={'Content-type': 'application/json'}
     )
     return response.content.decode()
