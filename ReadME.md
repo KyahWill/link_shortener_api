@@ -13,9 +13,9 @@
 **Folder Structure:**
 - [x] Basic - Flask App fulfilling "technically" the Basic Specifications
 
-- [ ] Optional_1 - Basic + Optional Feature 1
+- [x] Optional_1 - Basic + Optional Feature 1
 
-- [ ] Optional_2 - Optional 1 + Database Connection (Still undecided) + Docker File 
+- [?] Optional_2 - Optional 1 + Database Connection (Still undecided) + Docker File //Kinda deployed it serverless but I haven't really connected it to a database. 
 
 - [ ] Rewrite_1 - Features of Optional_1 but in vanilla python. 
 
