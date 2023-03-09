@@ -1,7 +1,7 @@
 import requests
 
 url = 'https://www.youtube.com'
-apiEndpoint = "http://localhost:5000/"
+apiEndpoint = "https://qwia00gx29.execute-api.us-east-1.amazonaws.com/dev"
 code = 'alias'
 def get_link(url):
     response = requests.post(apiEndpoint,
@@ -16,6 +16,6 @@ def redirect(link):
 # Print the response
 link = get_link(url)
 print(link)
-# output = redirect(link) 
+output = redirect(url) 
 
 # print(output)
